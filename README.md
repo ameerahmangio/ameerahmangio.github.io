@@ -1,3 +1,3 @@
-WEB110 Ameerah Mangio
-# ameerahmangio.github.io
+# WEB110 Ameerah Mangio
 
+http://ameerahmangio.github.io
