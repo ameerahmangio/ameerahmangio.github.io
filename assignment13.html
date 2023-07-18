@@ -26,10 +26,11 @@
 document.getElementById('display').innerHTML = 'Hello Ameerah!';
 </script>
 
-<script>
-const d = new Date();
-document.getElementById("demo").innerHTML = d;
-</script>
+<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
 
 <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
 </canvas>
