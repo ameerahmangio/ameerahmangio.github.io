@@ -20,18 +20,35 @@
   
 <body>
 
-  <h1 style="color:#262626;">Statements</h1>
+  <h1 style="color:#262626;">Statements from Activity 2</h1>
 
-  <p>SELECT Address FROM Customers</p>
+  <p>SELECT * FROM Customers;</p>
+  <p>SELECT CustomerID, CustomerName FROM Customers;</p>
+  <p>SELECT CustomerName, Address, City, PostalCode FROM Customers
+WHERE Country='UK';</p>
+  <p>SELECT ContactName, CustomerName FROM Customers
+ORDER BY ContactName ASC</p>
+  <p>SELECT COUNT(CustomerName)
+FROM Customers;</p>
+  <p>SELECT COUNT(CustomerName), Country
+FROM Customers
+GROUP BY Country;</p>
+  <p>SELECT COUNT(CustomerName), Country
+FROM Customers
+GROUP BY Country
+ORDER BY COUNT(CustomerName) DESC;</p>
+  <p>SELECT COUNT(CustomerName), Country
+FROM Customers
+GROUP BY Country
+HAVING COUNT(CustomerName) > 10
+ORDER BY COUNT(CustomerName) DESC;</p>
 
-  <p>INSERT INTO Customers (CustomerName, ContactName, Address, City, PostalCode, Country)
-VALUES ('Bella', 'Meridith B Grey', 'Skagen 26', 'Stavanger', '4006', 'Norway');</p>
-
-  <p>UPDATE Customers
-SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
-WHERE CustomerID = 1;</p>
-
-  <p>DELETE FROM Customers WHERE CustomerName='Around the Horn';</p>
+  <h1 style="color:#262626;">Statements from Activity 3</h1>
+  
+  <p>SELECT Orders.OrderID, Customers.CustomerName, OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;</p>
+  <p></p>
   
   <h1 style="color:blue;">Assignment 14</h1>
 
