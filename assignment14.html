@@ -49,6 +49,20 @@ ORDER BY COUNT(CustomerName) DESC;</p>
 FROM Orders
 INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;</p>
   <p></p>
+
+  <h1 style="color:#262626;">Statements from Activity 4</h1>
+
+  <p>INSERT INTO Suppliers (SupplierID, SupplierName, PhoneNumber)
+VALUES ('4', 'On Time Delivery', '(503) 555 0123');</p>
+  <p>UPDATE Products 
+SET UnitPrice = UnitPrice + 1 </p>
+  <p>UPDATE Products 
+SET UnitPrice = UnitPrice - 1 </p>
+  <p>UPDATE Suppliers
+SET ContactName='On-Time Delivery'
+WHERE CustomerID=4;</p>
+  <p>DELETE FROM Suppliers
+WHERE SupplierName='On Time Delivery';</p>
   
   <h1 style="color:blue;">Assignment 14</h1>
 
