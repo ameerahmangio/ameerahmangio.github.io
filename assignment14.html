@@ -48,7 +48,12 @@ ORDER BY COUNT(CustomerName) DESC;</p>
   <p>SELECT Orders.OrderID, Customers.CustomerName, OrderDate
 FROM Orders
 INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID;</p>
-  <p></p>
+  <p>SELECT Customers.CustomerName, OrderID AS OrderNumber, Order.OrderDate
+  FROM Orders
+  INNER JOIN Customers ON Orders.OrderID = Customers.OrderNumber;</p>
+  <p>SELECT OrderNumber AS OrNum, OrderDate AS ORDate, ProductName AS ProName, Quantity AS Qua 
+FROM Orders
+INNER JOIN Supplies ON Orders.OrderNumber = Customers.OrderNumber;</p>
 
   <h1 style="color:#262626;">Statements from Activity 4</h1>
 
